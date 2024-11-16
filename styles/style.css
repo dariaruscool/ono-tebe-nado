@@ -7,11 +7,11 @@
     align-items: center;
     justify-content: space-between;
 }
-
+/*
 .header-logo {
     
 }
-
+*/
 /* как выровнять логотип по центру? */
 .header__logo-image {
     width: 148px;
@@ -31,11 +31,11 @@
     display: flex;
     gap: 32px;
 }
-
+/*
 .header__menu-item {
     
 }
-
+*/
 .header__menu-item_active {
     list-style: none;
 }
@@ -55,11 +55,11 @@
     text-decoration: none;
     justify-content: flex-end;
 }
-
+/*
 .header__address {
 
 }
-
+*/
 /* на макете картинка немного по-другому обрезана, но не понимаю, как это исправить */
 .cover {
     display: flex;
@@ -92,6 +92,7 @@
     line-height: 100px;
     color: #FFFFFF;
     z-index: 1;
+    text-transform: uppercase;
 }
 
 .aligned-text {
@@ -110,11 +111,11 @@
     letter-spacing: 0.3em;
 }
 
-/* не поняла, для чего нужен этот селектор, и как его применить */
+/* не поняла, для чего нужен этот селектор, и как его применить 
 .no-letter-spacing {
 
 }
-
+*/
 .cover__description {
     display: flex;
 }
@@ -162,7 +163,6 @@
     margin-right: 24px;
 }
 
-/* здесь тоже параметры шрифта из макета, но он явно отличается... */
 .lots__heading {
     font-family: Raleway;
     font-size: 40px;
@@ -171,6 +171,7 @@
     color: #000000;
     margin-left: 40px;
     margin-bottom: 29px;
+    text-transform: uppercase;
 }
 
 .lots__card-list {
@@ -196,7 +197,7 @@
     display: flex;
     flex-direction: column;
     width: 334px;
-    height: 663px;
+    height: 563px;
 }
 
 .card_type_film {
@@ -209,7 +210,7 @@
 .card_type_book {
     background-image: url(./../images/card-lot-02.jpg);
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     z-index: -1;
 }
 
@@ -227,7 +228,7 @@
     line-height: 26.4px;
     text-align: left;
     text-transform: uppercase;
-    text-decoration: underline;  
+    text-decoration: underline;
     margin-left: 40px;
     margin-top: 68px;
 }
@@ -250,7 +251,6 @@
     font-weight: 400;
     line-height: 23.48px;
     text-align: left;
-    margin-left: 40px;
     color: #000000;
     text-decoration: underline;
     margin-left: 25px;
@@ -265,11 +265,12 @@
     margin-left: 24px;
     margin-right: 24px;
 }
-
+/*
 .about__column {
     
 }
-
+*/
+/* как разместить кружок по центру колонки?*/
 .about__logo {
     display: flex;
     width: 240px;
@@ -277,11 +278,11 @@
     border-radius: 50%;
     background-color: #000000;
     align-items: center;
-    padding-top: 35px;
+    padding-top: 15px;
     padding-left: 47px;
 }
 
-/* логотип не размещается по центру кружка? */
+/* логотип не размещается по центру кружка*/
 .about__logo-image {
     width: 141.54px;
     height: 112.55px;
@@ -322,11 +323,11 @@
     padding-bottom: 100px;
     margin-bottom: 50px;
 }
-
+/*
 .footer__menu {
 
 }
-
+*/
 .footer__menu-list {
     display: flex;
     flex-direction: column;
@@ -355,11 +356,11 @@
 .footer__social-list-item {
     list-style: none;
 }
-
+/*
 .footer__social-link {
 
 }
-
+*/
 .footer__social-icon {
     width: 48px;
     height: 48px;
