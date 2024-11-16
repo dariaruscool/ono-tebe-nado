@@ -1,1 +1,366 @@
-/* место для вашего кода */
+/* justify-content: space-between но логотип не по центру */
+.header {
+    display: flex;
+    width: 1052px;
+    height: 105px;
+    margin: 92px 24px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo {
+    
+}
+
+/* как выровнять логотип по центру? */
+.header__logo-image {
+    width: 148px;
+    height: 105px;
+    align-self: center;
+}
+
+.header__menu {
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.13px;
+    text-align: left;
+}
+
+.header__menu-list {
+    display: flex;
+    gap: 32px;
+}
+
+.header__menu-item {
+    
+}
+
+.header__menu-item_active {
+    list-style: none;
+}
+
+.header__menu-link {
+    list-style: circle;
+    text-decoration: underline;
+}
+
+.address {
+    font-style: normal;
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24.3px;
+    text-align: left;
+    text-decoration: none;
+    justify-content: flex-end;
+}
+
+.header__address {
+
+}
+
+/* на макете картинка немного по-другому обрезана, но не понимаю, как это исправить */
+.cover {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 1100px;
+    height: 757px;
+    background-image: url(./../images/cover.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+/* явные проблемы из-за позиционирования. Не могу разобраться с position родителя (и кто он?) и overlay */
+.overlay {
+    display: flex;
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+}
+
+/* все параметры текста я взяла из фигмы, но визуально, мне кажется, текст от макета отличается */
+.cover__title {
+    /*display: block;*/
+    margin: 165px 50px;
+    font-family: Raleway;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 100px;
+    color: #FFFFFF;
+    z-index: 1;
+}
+
+.aligned-text {
+    display: block;
+}
+
+.aligned-text_center {
+    text-align: center;
+}
+
+.aligned-text_right {
+    text-align: right;
+}
+
+.letter-spacing-extended {
+    letter-spacing: 0.3em;
+}
+
+/* не поняла, для чего нужен этот селектор, и как его применить */
+.no-letter-spacing {
+
+}
+
+.cover__description {
+    display: flex;
+}
+
+.cover__description-text {
+    display: flex;
+    font-family: Raleway;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 28px;
+    text-transform: uppercase;
+    word-spacing: 22px;
+    color: #FFFFFF;
+    padding-left: 78px;
+    padding-bottom: 78px;
+    z-index: 1;
+
+}
+
+/* как расположить кнопку по центру текста? */
+.bet-button {
+    font-family: Raleway;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 25.83px;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    width: 256px;
+    height: 51px;
+    margin-left: 794px;
+    color: #FFFFFF;
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.lots {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1029px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+/* здесь тоже параметры шрифта из макета, но он явно отличается... */
+.lots__heading {
+    font-family: Raleway;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 46.96px;
+    color: #000000;
+    margin-left: 40px;
+    margin-bottom: 29px;
+}
+
+.lots__card-list {
+    list-style: none;
+    display: flex;
+}
+
+.lots__card-list-item {
+    flex-grow: 1;
+}
+
+.card-link {
+    font-family: Raleway;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26.4px;
+    text-align: left;
+    text-decoration: underline;
+    color: #FFFFFF;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 334px;
+    height: 663px;
+}
+
+.card_type_film {
+    background-image: url(./../images/card-lot-01.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    z-index: -1;
+}
+
+.card_type_book {
+    background-image: url(./../images/card-lot-02.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    z-index: -1;
+}
+
+.card_type_picture {
+    background-image: url(./../images/card-lot-03.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    z-index: -1;
+}
+
+.card__title {
+    font-family: Raleway;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26.4px;
+    text-align: left;
+    text-transform: uppercase;
+    text-decoration: underline;  
+    margin-left: 40px;
+    margin-top: 68px;
+}
+
+/* почему не убралось подчеркивание и как сместить текст к нижнему краю?*/
+.card__text {
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color:#FFFFFF;
+    text-decoration: none;
+    margin: 0 40px 68px 40px;
+}
+
+.lots__look-more-link {
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23.48px;
+    text-align: left;
+    margin-left: 40px;
+    color: #000000;
+    text-decoration: underline;
+    margin-left: 25px;
+    margin-top: 29px;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 334px 693px;
+    gap: 25px;
+    margin-top: 180px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.about__column {
+    
+}
+
+.about__logo {
+    display: flex;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    background-color: #000000;
+    align-items: center;
+    padding-top: 35px;
+    padding-left: 47px;
+}
+
+/* логотип не размещается по центру кружка? */
+.about__logo-image {
+    width: 141.54px;
+    height: 112.55px;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__title {
+    font-family: Raleway;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 46.96px;
+    text-align: left;
+    text-transform: uppercase;
+    padding-top: 103px;
+    margin-bottom: 56px;
+}
+
+.about__text {
+    padding-top: 24px;
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    text-align: left;
+}
+
+/*Почему снизу отступ не появляется?*/
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 98px;
+    width: 1000px;
+    margin-top: 180px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-bottom: 100px;
+    margin-bottom: 50px;
+}
+
+.footer__menu {
+
+}
+
+.footer__menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    text-align: center;
+}
+
+.footer__menu-list-item {
+    list-style: none;
+}
+
+.footer__menu-link {
+    text-decoration: underline;
+}
+
+.footer__menu-link_active {
+    text-decoration: none;
+}
+
+.footer__social-list {
+    display: flex;
+    gap: 48px;
+    justify-self: center;
+}
+
+.footer__social-list-item {
+    list-style: none;
+}
+
+.footer__social-link {
+
+}
+
+.footer__social-icon {
+    width: 48px;
+    height: 48px;
+}
