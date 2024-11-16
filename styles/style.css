@@ -317,7 +317,7 @@
     grid-template-columns: repeat(3, 1fr);
     height: 98px;
     width: 1000px;
-    margin-top: 160px;
+    margin-top: 175px;
     margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 100px;
@@ -350,6 +350,7 @@
     display: flex;
     gap: 48px;
     justify-self: end;
+    align-self: flex-end;
 }
 
 .footer__social-list-item {
