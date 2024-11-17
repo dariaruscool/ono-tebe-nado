@@ -1,11 +1,18 @@
 /* justify-content: space-between но логотип не по центру */
 .header {
-    display: flex;
+    display: grid;
+    grid-template-columns: 445px 148px 459px;
+    height: 105px;
+    width: 1052px;
+    margin: 92px 24px;
+    justify-items: center;
+    align-items: center;
+    /*display: flex;
     width: 1052px;
     height: 105px;
     margin: 92px 24px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between;*/
 }
 /*
 .header-logo {
@@ -14,7 +21,7 @@
 */
 /* как выровнять логотип по центру? */
 .header__logo-image {
-    width: 148px;
+    width: 129px;
     height: 105px;
     align-self: center;
 }
@@ -30,6 +37,7 @@
 .header__menu-list {
     display: flex;
     gap: 32px;
+    margin-left: 26px;
 }
 /*
 .header__menu-item {
@@ -73,7 +81,7 @@
     z-index: -1;
 }
 
-/* явные проблемы из-за позиционирования. Не могу разобраться с position родителя (и кто он?) и overlay */
+/* явные проблемы из-за позиционирования. Не могу разобраться с position родителя у карточек */
 .overlay {
     display: flex;
     position: absolute;
@@ -189,8 +197,8 @@
     font-weight: 700;
     line-height: 26.4px;
     text-align: left;
-    text-decoration: underline;
     color: #FFFFFF;
+    padding-bottom: 55px;
 }
 
 .card {
@@ -198,6 +206,7 @@
     flex-direction: column;
     width: 334px;
     height: 563px;
+    justify-content: space-between;
 }
 
 .card_type_film {
@@ -230,10 +239,11 @@
     text-transform: uppercase;
     text-decoration: underline;
     margin-left: 40px;
-    margin-top: 68px;
+    margin-right: 40px;
+    margin-top: 45px;
 }
 
-/* почему не убралось подчеркивание и как сместить текст к нижнему краю?*/
+/* как сместить текст к нижнему краю?*/
 .card__text {
     font-family: Raleway;
     font-size: 20px;
@@ -241,8 +251,7 @@
     line-height: 24px;
     text-align: left;
     color:#FFFFFF;
-    text-decoration: none;
-    margin: 0 40px 68px 40px;
+    margin: 0 40px 40px 40px;
 }
 
 .lots__look-more-link {
@@ -321,9 +330,9 @@
     height: 98px;
     width: 1000px;
     margin-top: 185px;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 90px;
 }
 /*
 .footer__menu {
@@ -354,7 +363,6 @@
     display: flex;
     gap: 48px;
     justify-self: end;
-    align-self: flex-end;
 }
 
 .footer__social-list-item {
