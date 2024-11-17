@@ -1,7 +1,7 @@
 /* justify-content: space-between но логотип не по центру */
 .header {
     display: grid;
-    grid-template-columns: 445px 148px 59px 400px;
+    grid-template-columns: 445px 148px 209px 250px;
     height: 105px;
     width: 1052px;
     margin: 96px 24px;
@@ -78,6 +78,7 @@
     background-image: url(./../images/cover.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     z-index: -1;
 }
 
@@ -215,6 +216,7 @@
     background-image: url(./../images/card-lot-01.jpg);
     background-repeat: no-repeat;
     background-size:cover;
+    background-position: center;
     z-index: -1;
 }
 
@@ -222,13 +224,15 @@
     background-image: url(./../images/card-lot-02.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     z-index: -1;
 }
 
 .card_type_picture {
     background-image: url(./../images/card-lot-03.jpg);
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
+    background-position: center;
     z-index: -1;
 }
 
@@ -330,7 +334,7 @@
 
 .footer {
     display: grid;
-    grid-template-columns: 455px 148px 157px 240px;
+    grid-template-columns: 455px 148px 117px 240px;
     height: 98px;
     width: 1000px;
     margin-top: 185px;
