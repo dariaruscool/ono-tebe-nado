@@ -321,10 +321,10 @@
     grid-template-columns: repeat(3, 1fr);
     height: 98px;
     width: 1000px;
-    margin-top: 190px;
+    margin-top: 185px;
     margin-left: 50px;
     margin-right: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 105px;
 }
 /*
 .footer__menu {
