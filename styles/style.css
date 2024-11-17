@@ -278,14 +278,18 @@
     border-radius: 50%;
     background-color: #000000;
     align-items: center;
+/* эти отступы двигают логотип, а не кружок, как я ожидала*/
     padding-top: 15px;
     padding-left: 47px;
+/* это не работает*/
+    justify-items: center;
 }
 
 /* логотип не размещается по центру кружка*/
 .about__logo-image {
     width: 141.54px;
     height: 112.55px;
+/* это не работает, в итоге регулирую падддингами из about.logo*/
     justify-content: center;
     align-items: center;
 }
@@ -317,7 +321,7 @@
     grid-template-columns: repeat(3, 1fr);
     height: 98px;
     width: 1000px;
-    margin-top: 180px;
+    margin-top: 200px;
     margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 100px;
