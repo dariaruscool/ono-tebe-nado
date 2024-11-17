@@ -1,10 +1,10 @@
 /* justify-content: space-between но логотип не по центру */
 .header {
     display: grid;
-    grid-template-columns: 445px 148px 459px;
+    grid-template-columns: 445px 148px 45px 414px;
     height: 105px;
     width: 1052px;
-    margin: 92px 24px;
+    margin: 96px 24px;
     justify-items: center;
     align-items: center;
     /*display: flex;
@@ -93,7 +93,7 @@
 /* все параметры текста я взяла из фигмы, но визуально, мне кажется, текст от макета отличается */
 .cover__title {
     /*display: block;*/
-    margin: 165px 50px;
+    margin: 140px 50px;
     font-family: Raleway;
     font-size: 100px;
     font-weight: 700;
@@ -105,6 +105,7 @@
 
 .aligned-text {
     display: block;
+    padding-top: 25px;
 }
 
 .aligned-text_center {
@@ -262,7 +263,7 @@
     text-align: left;
     color: #000000;
     text-decoration: underline;
-    margin-left: 25px;
+    margin-left: 30px;
     margin-top: 29px;
 }
 
@@ -326,13 +327,13 @@
 
 .footer {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 445px 148px 45px 362px;
     height: 98px;
     width: 1000px;
     margin-top: 185px;
     padding-left: 50px;
     padding-right: 50px;
-    padding-bottom: 90px;
+    margin-bottom: 90px;
 }
 /*
 .footer__menu {
