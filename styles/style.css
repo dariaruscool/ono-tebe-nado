@@ -1,4 +1,3 @@
-/* justify-content: space-between но логотип не по центру */
 .header {
     display: grid;
     grid-template-columns: 445px 148px 159px 300px;
@@ -7,19 +6,8 @@
     margin: 96px 24px;
     justify-items: center;
     align-items: center;
-    /*display: flex;
-    width: 1052px;
-    height: 105px;
-    margin: 92px 24px;
-    align-items: center;
-    justify-content: space-between;*/
 }
-/*
-.header-logo {
-    
-}
-*/
-/* как выровнять логотип по центру? */
+
 .header__logo-image {
     width: 129px;
     height: 105px;
@@ -39,11 +27,7 @@
     gap: 32px;
     margin-left: 26px;
 }
-/*
-.header__menu-item {
-    
-}
-*/
+
 .header__menu-item_active {
     list-style: none;
 }
@@ -63,12 +47,7 @@
     text-decoration: none;
     justify-content: flex-end;
 }
-/*
-.header__address {
-
-}
-*/
-/* на макете картинка немного по-другому обрезана, но не понимаю, как это исправить */
+ 
 .cover {
     display: flex;
     flex-direction: column;
@@ -82,7 +61,6 @@
     z-index: -1;
 }
 
-/* явные проблемы из-за позиционирования. Не могу разобраться с position родителя у карточек */
 .overlay {
     display: flex;
     position: absolute;
@@ -91,9 +69,7 @@
     z-index: 0;
 }
 
-/* все параметры текста я взяла из фигмы, но визуально, мне кажется, текст от макета отличается */
 .cover__title {
-    /*display: block;*/
     margin: 140px 50px;
     font-family: Raleway;
     font-size: 100px;
@@ -122,11 +98,6 @@
     letter-spacing: 0.3em;
 }
 
-/* не поняла, для чего нужен этот селектор, и как его применить 
-.no-letter-spacing {
-
-}
-*/
 .cover__description {
     display: flex;
 }
@@ -146,7 +117,6 @@
 
 }
 
-/* как расположить кнопку по центру текста? */
 .bet-button {
     font-family: Raleway;
     font-size: 22px;
@@ -250,7 +220,6 @@
     margin-top: 40px;
 }
 
-/* как сместить текст к нижнему краю?*/
 .card__text {
     font-family: Raleway;
     font-size: 20px;
@@ -282,34 +251,20 @@
     margin-right: 24px;
     justify-items: center;
 }
-/*
-.about__column {
-    
-}
-*/
-/* как разместить кружок по центру колонки?*/
+
 .about__logo {
     display: flex;
     width: 240px;
     height: 240px;
     border-radius: 50%;
     background-color: #000000;
-    align-items: center;
-/* эти отступы двигают логотип, а не кружок, как я ожидала
-    padding-top: 15px;
-    padding-left: 47px;
-/* это не работает*/
-    
+    align-items: center;   
 }
 
-/* логотип не размещается по центру кружка*/
 .about__logo-image {
     width: 141.54px;
     height: 112.55px;
     margin: auto;
-/* это не работает, в итоге регулирую падддингами из about.logo*/
-    justify-content: center;
-    align-items: center;
 }
 
 .about__title {
@@ -343,11 +298,7 @@
     padding-right: 50px;
     margin-bottom: 85px;
 }
-/*
-.footer__menu {
 
-}
-*/
 .footer__menu-list {
     display: flex;
     flex-direction: column;
@@ -367,7 +318,7 @@
     text-decoration: none;
 }
 
-/*Автотесты показывают неправильное выравнивание*/
+
 .footer__social-list {
     display: flex;
     gap: 48px;
@@ -377,11 +328,7 @@
 .footer__social-list-item {
     list-style: none;
 }
-/*
-.footer__social-link {
 
-}
-*/
 .footer__social-icon {
     width: 48px;
     height: 48px;
