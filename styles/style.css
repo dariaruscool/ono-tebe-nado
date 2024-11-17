@@ -246,7 +246,7 @@
     text-decoration: underline;
     margin-left: 40px;
     margin-right: 40px;
-    margin-top: 45px;
+    margin-top: 40px;
 }
 
 /* как сместить текст к нижнему краю?*/
@@ -334,7 +334,7 @@
 
 .footer {
     display: grid;
-    grid-template-columns: 455px 148px 117px 240px;
+    grid-template-columns: 455px 148px 177px 300px;
     height: 98px;
     width: 1000px;
     margin-top: 185px;
