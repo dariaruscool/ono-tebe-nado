@@ -302,7 +302,7 @@
     text-align: left;
     text-transform: uppercase;
     padding-top: 103px;
-    margin-bottom: 56px;
+    margin-bottom: 36px;
 }
 
 .about__text {
@@ -315,16 +315,15 @@
     text-align: left;
 }
 
-/*Почему снизу отступ не появляется?*/
 .footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     height: 98px;
     width: 1000px;
-    margin-top: 185px;
+    margin-top: 200px;
     margin-left: 50px;
     margin-right: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 85px;
 }
 /*
 .footer__menu {
@@ -350,7 +349,7 @@
     text-decoration: none;
 }
 
-/*Почему снизу отступ не появляется?*/
+/*Автотесты показывают неправильное выравнивание?*/
 .footer__social-list {
     display: flex;
     gap: 48px;
