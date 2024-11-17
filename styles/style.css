@@ -321,7 +321,7 @@
     grid-template-columns: repeat(3, 1fr);
     height: 98px;
     width: 1000px;
-    margin-top: 200px;
+    margin-top: 195px;
     margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 100px;
@@ -350,6 +350,7 @@
     text-decoration: none;
 }
 
+/*Почему снизу отступ не появляется?*/
 .footer__social-list {
     display: flex;
     gap: 48px;
