@@ -1,7 +1,7 @@
 /* justify-content: space-between но логотип не по центру */
 .header {
     display: grid;
-    grid-template-columns: 445px 148px 45px 414px;
+    grid-template-columns: 445px 148px 59px 400px;
     height: 105px;
     width: 1052px;
     margin: 96px 24px;
@@ -110,6 +110,7 @@
 
 .aligned-text_center {
     text-align: center;
+    padding-left: 10px;
 }
 
 .aligned-text_right {
@@ -274,6 +275,7 @@
     margin-top: 180px;
     margin-left: 24px;
     margin-right: 24px;
+    justify-items: center;
 }
 /*
 .about__column {
@@ -288,17 +290,18 @@
     border-radius: 50%;
     background-color: #000000;
     align-items: center;
-/* эти отступы двигают логотип, а не кружок, как я ожидала*/
+/* эти отступы двигают логотип, а не кружок, как я ожидала
     padding-top: 15px;
     padding-left: 47px;
 /* это не работает*/
-    justify-items: center;
+    
 }
 
 /* логотип не размещается по центру кружка*/
 .about__logo-image {
     width: 141.54px;
     height: 112.55px;
+    margin: auto;
 /* это не работает, в итоге регулирую падддингами из about.logo*/
     justify-content: center;
     align-items: center;
@@ -327,13 +330,13 @@
 
 .footer {
     display: grid;
-    grid-template-columns: 445px 148px 45px 362px;
+    grid-template-columns: 455px 148px 157px 240px;
     height: 98px;
     width: 1000px;
     margin-top: 185px;
     padding-left: 50px;
     padding-right: 50px;
-    margin-bottom: 90px;
+    margin-bottom: 85px;
 }
 /*
 .footer__menu {
