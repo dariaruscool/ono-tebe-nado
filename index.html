@@ -14,18 +14,22 @@
     <div>
       <nav class="header__menu">
         <ul class="header__menu-list">
-          <li class="header__menu-item header__menu-item_active">главная</li>
-          <li class="header__menu-item header__menu-link">посмотреть лоты</li>
-          <li class="header__menu-item header__menu-link">об аукционе</li>
+          <li class="header__menu-item header__menu-item_active">
+            <a>главная</a>
+          </li>
+          <li class="header__menu-item header__menu-link">
+            <a href="#lots">посмотреть лоты</a>
+          </li>
+          <li class="header__menu-item header__menu-link">
+            <a href="#about">об аукционе</a>
+          </li>
         </ul>
       </nav>
     </div>
     <div>
         <a class="header-logo"> <img src="./images/logo-black.svg" alt="Логотип сайта черный" class="header__logo-image"> </a>
     </div>
-    <div></div>
-    <div>
-      <address class="address">
+    <address class="address header-address">
         <a href="tel:+99995555555">+9(999)555-55-55</a>
         <br>
         <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
@@ -39,16 +43,16 @@
       <div class="overlay">
       </div>
       <h1 class="cover__title">
-        <span class="aligned-text letter-spacing-extended">он о</span> 
-        <span class="aligned-text aligned-text_center letter-spacing-extended"> теб е</span>
-        <span class="aligned-text aligned-text_right letter-spacing-extended"> н адо</span>
+        о<span class="letter-spacing-extended">нo</span>
+        <span class="aligned-text aligned-text_center">те<span class="letter-spacing-extended">бе</span></span>
+        <span class="aligned-text aligned-text_right"><span class="letter-spacing-extended">н</span>ад<span class="no-letter-spacing">о</span></span>
       </h1>
       <div class="cover__description">
         <p class="cover__description-text">аукцион вещей, в которые никто не верил</p>
-        <button class="bet-button">сделать ставку</button>
+        <button class="bet-button" type="button">сделать ставку</button>
       </div>
     </section>
-    <section class="lots">
+    <section class="lots" id="lots">
       <h2 class="lots__heading">лоты</h2>
       <ul class="lots__card-list">
         <li class="lots__card-list-item">
@@ -84,7 +88,7 @@
       </ul>
       <a class="lots__look-more-link">посмотреть больше</a>
     </section>
-    <section class="about">
+    <section class="about" id="about">
       <div class="about__column">
         <div class="about__logo"> 
           <img src="./images/logo-white.svg" alt="Логотип сайта белый" class="about__logo-image"> 
@@ -109,13 +113,18 @@
     <div>
       <nav class="footer__menu">
         <ul class="footer__menu-list">
-          <li class="footer__menu-list-item footer__menu-link_active">главная</li>
-          <li class="footer__menu-list-item footer__menu-link">посмотреть лоты</li>
-          <li class="footer__menu-list-item footer__menu-link">об аукционе</li>
+          <li class="footer__menu-list-item footer__menu-link_active">
+            <a>главная</a>
+          </li>
+          <li class="footer__menu-list-item footer__menu-link">
+            <a href="#lots">посмотреть лоты</a>
+          </li>
+          <li class="footer__menu-list-item footer__menu-link">
+            <a href="#about">об аукционе</a>
+          </li>
         </ul>
       </nav>
     </div>
-    <div></div>
     <div>
       <ul class="footer__social-list">
         <li class="footer__social-list-item">
